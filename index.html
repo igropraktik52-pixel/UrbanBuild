@@ -109,12 +109,14 @@
                         <h2>Готовы к строительству без стресса?</h2>
                         <p>Оставьте заявку, чтобы получить бесплатную консультацию и узнайте, как мы защищаем вас на каждом шаге.</p>
                     </div>
-                    <form class="cta-form" onsubmit="event.preventDefault(); alert('Спасибо! Заявка отправлена.');">
+                    <form class="cta-form" action="https://formsubmit.co/ВАШ_EMAIL@GMAIL.COM" method="POST">
+                        <input type="hidden" name="_subject" value="🔥 Новая заявка с сайта Urman Build!">
+                        <input type="hidden" name="_captcha" value="false">
                         <div class="input-group">
-                            <input type="text" placeholder="Ваше Имя" required>
+                            <input type="text" name="Имя" placeholder="Ваше Имя" required>
                         </div>
                         <div class="input-group">
-                            <input type="tel" placeholder="Телефон" required>
+                            <input type="tel" name="Телефон" placeholder="Телефон" required>
                         </div>
                         <button type="submit" class="btn btn-primary pulse">Узнать подробнее</button>
                     </form>
